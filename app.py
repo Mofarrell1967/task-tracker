@@ -6,12 +6,14 @@ from os import path
 if path.exists("env.py"):
     import env
 
+  
+
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = os.environ.get('DATABASE')
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI')    
 
 
-
+mongo = PyMongo(app)
 
 # Start of task routes
 
