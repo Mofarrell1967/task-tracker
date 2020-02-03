@@ -3,12 +3,12 @@ from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from os import path
-if path.exists("env.py"):
-    import env
+import env
 
   
 
 app = Flask(__name__)
+
 app.config["MONGO_DBNAME"] = os.environ.get('DATABASE')
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI')    
 
@@ -106,7 +106,40 @@ def add_project():
 
 # Start of staff routes
 
+@app.route('/get_staff')
+def get_staff():
+    return render_template("staff.html", staff=mongo.db.staff.find())    
 
+@app.route('/add_staff')
+def add_staff():
+    return render_template('addstaff.html') 
+
+@app.route('/insert_staff', methods=['POST'])
+def insert_staff():
+    staff = mongo.db.staff
+    staff.insert_one(request.form.to_dict())
+    return redirect(url_for('get_staff')) 
+
+@app.route('/update_staff/<staff_id>', methods=["POST"])
+def update_staff(staff_id):
+    staff = mongo.db.staff
+    staff.update( {'_id': ObjectId(staff_id)},
+    {
+        'staff_name':request.form.get('staff_name'),
+        'team':request.form.get('team')
+        })
+    return redirect(url_for('get_staff')) 
+
+@app.route('/delete_staff/<staff_id>')
+def delete_staff(staff_id):
+    mongo.db.staff.remove({'_id': ObjectId(staff_id)})
+    return redirect(url_for('get_staff'))
+
+@app.route('/edit_staff/<staff_id>')
+def edit_staff(staff_id):
+    return render_template('editstaff.html',
+    staff=mongo.db.staff.find_one({'_id': ObjectId(staff_id)}))
+    
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
