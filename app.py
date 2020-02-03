@@ -8,11 +8,10 @@ if path.exists("env.py"):
 
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = os.environ.get('DATABASE')
-if os.path.exists("env.py"):
-    app.config["MONGO_URI"] = os.environ.get('MONGO_URI')    
+app.config["MONGO_URI"] = os.environ.get('MONGO_URI')    
 
 
-mongo = PyMongo(app)
+
 
 # Start of task routes
 
@@ -66,9 +65,45 @@ def delete_task(task_id):
 
 # Start of project routes
 
+@app.route('/get_projects')
+def get_projects():
+    return render_template('projects.html',
+                           projects=mongo.db.projects.find())
+
+@app.route('/delete_project/<project_id>')
+def delete_project(project_id):
+    mongo.db.projects.remove({'_id': ObjectId(project_id)})
+    return redirect(url_for('get_projects'))
+
+@app.route('/edit_project/<project_id>')
+def edit_project(project_id):
+    return render_template('editproject.html',
+    project=mongo.db.projects.find_one({'_id': ObjectId(project_id)}))
+
+@app.route('/update_project/<project_id>', methods=['POST'])
+def update_project(project_id):
+    mongo.db.projects.update(
+        {'_id': ObjectId(project_id)},
+        {
+        'project_name': request.form.get('project_name'),
+        'project_description': request.form.get('project_description'),
+        'project_owner': request.form.get('project_owner')
+        })
+    return redirect(url_for('get_projects'))
+
+@app.route('/insert_project', methods=['POST'])
+def insert_project():
+    projects = mongo.db.projects
+    projects.insert_one(request.form.to_dict())
+    return redirect(url_for('get_projects'))
+
+@app.route('/add_project')
+def add_project():
+    return render_template('addproject.html')
 
 
 # Start of staff routes
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
