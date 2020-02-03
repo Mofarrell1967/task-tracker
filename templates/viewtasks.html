@@ -41,12 +41,44 @@
                   <div class="row">   
                     <div class="col s4">Assigned To: </div><strong>{{task.staff_name}}</strong>
                     </div>  
-
-
-
-                     {% endfor %}
+                
+            <div class="row card-view">
+            <div class="switch">
+                                <label>
+                    {% if task.key %}
+                          <input id="key" name="key" disabled type="checkbox" checked>
+                    {% else %}
+                         <input id="key" name="key" disabled type="checkbox">
+                    {% endif%}
+                  <span class="lever"></span>
+                  Key
+                </label>
+                <label>
+                    {% if task.external %}
+                          <input id="external" name="external" disabled type="checkbox" checked>
+                    {% else %}
+                         <input id="external" name="external" disabled type="checkbox">
+                    {% endif%}
+                  <span class="lever"></span>
+                  External Customer
+                </label>
+                <label>
+                    {% if task.billable %}
+                          <input id="billable" name="billable" disabled type="checkbox" checked>
+                    {% else %}
+                         <input id="billable" name="billable" disabled type="checkbox">
+                    {% endif%}
+                  <span class="lever"></span>
+                  Is Billable
+                </label>
+            </div>
+        </div>
+              </div>
+             </div> 
+                     </li>
+                    
+        {% endfor %}
     </ul>
-  
 </div>
 
 {% endblock %}
