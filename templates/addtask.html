@@ -1,0 +1,87 @@
+{% extends 'base.html' %} {% block content %}
+<h4>Add Task</h4>
+<div class="row container" id="matfix">
+    <form action="{{ url_for('insert_task') }}" method="POST"  class="col s12">
+    <div class="row">
+                    <div class="input-field col s12">
+                    <i class="material-icons prefix green-text text-darken-3">poll</i>
+                    <select id="projects" name="project_name">
+                  <option value="" disabled selected>Choose Project</option>
+                  {% for pro in projects %}
+                      <option value="{{pro.project_name}}">{{pro.project_name}}</option>
+                  {% endfor %}
+                </select>
+                    <label>Task Project</label>
+                </div>
+            </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix green-text text-darken-3">assignment</i>
+               <textarea name="task_name" id="task_name" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">Task Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix green-text text-darken-3">subject</i>
+                <textarea name="task_description" id="task_description" class="materialize-textarea"></textarea>
+                <label for="icon_telephone">Task Description</label>
+            </div>
+        </div>
+         <div class="row">
+                    <div class="input-field col s12">
+                    <i class="material-icons prefix green-text text-darken-3">assignment_ind</i>
+                    <select id="staff" name="staff_name">
+                  <option value="" disabled selected>Choose Staff</option>
+                  {% for sta in staff %}
+                      <option value="{{sta.staff_name}}">{{sta.staff_name}}</option>
+                  {% endfor %}
+                </select>
+                    <label>Assigned To:</label>
+                </div>
+            </div>
+              <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix green-text text-darken-3">today</i>
+                <input id="due_date" name="due_date" type="text" class="datepicker">
+                <label for="icon_prefix">Due Date</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="switch">
+                <label>
+                  <input id="key" name="key" type="checkbox">
+                  <span class="lever"></span>
+                  Is Key
+                </label>
+           
+            
+                <label>
+                  <input id="external" name="external" type="checkbox">
+                  <span class="lever"></span>
+                  External Customer
+                </label>
+            
+           
+                <label>
+                  <input id="billable" name="billable" type="checkbox">
+                  <span class="lever"></span>
+                  Is Billable
+                </label>
+               
+          </div>
+           </div>
+            </div>
+         <div class="row">
+            <button class=".btn_small waves-effect waves-light" type="submit" name="action">Save
+                <i class="material-icons right">update</i>                
+             </button>
+        
+            <button class=".btn_small waves-effect waves-light" type="submit" name="action">Cancel
+                <i class="material-icons right">cancel</i>                
+             </button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
