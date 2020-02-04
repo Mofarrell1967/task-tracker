@@ -8,3 +8,50 @@ body {
   main {
     flex: 1 0 auto;
   }
+
+  .btn_small {
+    height: 24px;
+    width: 50px;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
+}
+
+.task_header {
+    margin-top: 5px;
+}
+
+.viewtask_header {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.box {
+    padding-top: 55px;
+}
+
+
+.dropdown-content {
+  background-color: #FFFFFF;
+  margin: 0;
+  display: none;
+  min-width: 300px; /* Changed this to accomodate content width */
+  max-height: auto;
+	margin-left: -1px; /* Add this to keep dropdown in line with edge of navbar */
+  overflow: hidden; /* Changed this from overflow-y:auto; to overflow:hidden; */
+  opacity: 0;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+  will-change: width, height;
+}
+
+.card-view {
+    padding-top: 10px;
+
+}
+
+.card-space {
+    padding-top: 35px;
+
+}
