@@ -1,11 +1,12 @@
 import os
-from flask import Flask, render_template, redirect, request, url_for
-from flask_pymongo import PyMongo
-from bson.objectid import ObjectId
-from os import path
 import env
 
-  
+from flask import Flask, render_template, redirect, request, url_for, flash
+from flask_pymongo import PyMongo
+from bson.objectid import ObjectId
+
+if os.path.exists("env.py"):
+    import env
 
 app = Flask(__name__)
 
@@ -14,6 +15,9 @@ app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
 
 
 mongo = PyMongo(app)
+
+mongo = PyMongo(app)
+
 
 # Start of task routes
 
@@ -139,6 +143,8 @@ def delete_staff(staff_id):
 def edit_staff(staff_id):
     return render_template('editstaff.html',
     staff=mongo.db.staff.find_one({'_id': ObjectId(staff_id)}))
+
+   
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
