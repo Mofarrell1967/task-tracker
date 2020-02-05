@@ -113,7 +113,7 @@ This screen enables the user to edit or delete an existing project in the workst
 
 The screen displays the Staff Name with a dropdown option to view the Staff Team.
 
-![index](static/readme_images/edit_project.png)
+![index](static/readme_images/edit_staff.jpg)
 
 
 ## Future Release & development
@@ -134,100 +134,6 @@ The screen displays the Staff Name with a dropdown option to view the Staff Team
 *   [MongoDB](https://www.mongodb.com/) -   general purpose, document-based, distributed database
 *   [Flask](https://www.palletsprojects.com/p/flask/) -   Flask is a lightweight WSGI web application framework
 *   [Heroku](https://www.heroku.com/home) -   Deploy and run apps
-
-
-# TESTING
-
-The testing methodology was agreed by the team and based on manual process covering agreed criteria.
-
-The first element of testing covered the layout and presentation of the pages to ensure they met the requirements set out
-in the scope and satisfied the expectations of the user base.
-
-Each element was reviewed by the testing team and given a 'pass' or 'fail' score - a 'pass' would result in the design Sprint
-being signed off and a 'fail' resulted in that sprint being returned to the developer with comment and instruction to resolve
-the reported issue.
-
-Layout & Presentation test results
-
-![index](assets/documents/testing/layout_test_results.png)
-
-
-The 2nd phase of testing covered the functionality and useability of the index.html (Task Analysis Dashboard) and was tested to
-ensure all required aspects of the page complied with requirements.
-
-All dashboard functionality was tested by the team during this testing phase and the 'pass' or 'fail' score was applied to the
-results with 'fail' being returned for action and resolution.
-
-Task Dashboard Test Results
-
-![index](assets/documents/testing/task_dashboard_test_results.png)
-
-
-The 3rd phase of testing covered the functionality and useability of the time.html (Time Analysis Dashboard) and was tested to
-ensure all required aspects of the page complied with requirements.
-
-All dashboard functionality was tested by the team during this testing phase and the 'pass' or 'fail' score was applied to the
-results with 'fail' being returned for action and resolution.
-
-Time Dashboard Test Results
-
-![index](assets/documents/testing/time_dashboard_test_results.png)
-
-The pages are not required to be device responsive and, therefore, was only tested to ensure they displayed correctly on
-desktop screens and overhead projection units
-
-HTML, CSS & Javascriot Validation
-
-HTML code was validated using https://validator.w3.org/
-
-CSS code was validated using https://jigsaw.w3.org/css-validator/
-
-Javascript checked with https://jshint.com/
-
-
-# DEPLOYMENT
-
-## GitHub
-
-This site is hosted on GitHub and deployed directly from the master branch. Any commit updates or new releases will be deployed to that master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
-
-To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://github.com/Mofarrell1967/Staff-Analysis-Dashboards into your terminal. To unlink the site from the GitHub repository, type git remote rm origin into the terminal.
-
-The site is hosted on GitHub and can be run from there or locally by pasting the following link directly into your browser. https://mofarrell1967.github.io/Staff-Analysis-Dashboards/
-
-To view the source code please click on the following GitHub address https://github.com/Mofarrell1967/Staff-Analysis-Dashboards
-
-
-## Company Deployment
-
-Deployment within the company pages will be applied through the copying of the source code from the GitHub pages and placing the code in the local company Sharepoint resource pages.
-The code will then be updated to use the production data source files instead of the test csv source.
-
-Locations and paths for this deployment cannot be viewed from this page as per company security policies.
-
-# CREDITS
-
-### content
-
-Thanks go to John Alexis Guerra Gómez for the youtube tutorial which was used to assist in the development of the table and row charts
-
-https://www.youtube.com/watch?v=8TBh5ghRZrI
-
-Code Institute for the educational modules used as partial templates for the bar graphs and functionality
-
-https://courses.codeinstitute.net/program/FullstackWebDeveloper
-
-
-### Acknowledgements
-
-BT Capacity team for the SOR and testing of the pages
-
-CA for the inspiration in moving to dashboards from the existing reporting methods
-
-**Please Note that this site is currently for educational purposes only**
-
-
-
 
 
 
