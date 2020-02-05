@@ -2,7 +2,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: #f5f5f5;
+    
   }
 
   main {
@@ -15,6 +15,10 @@ body {
     line-height: 24px;
     margin: 5px 5px;
     padding: 0 0.5em;
+}
+
+.btn_col {
+    color: #e0f2f1;
 }
 
 .task_header {
@@ -48,6 +52,7 @@ body {
 
 .card-view {
     padding-top: 10px;
+    background-color: #fafafa;
 
 }
 
@@ -55,3 +60,4 @@ body {
     padding-top: 35px;
 
 }
+

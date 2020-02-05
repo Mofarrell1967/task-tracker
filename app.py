@@ -141,7 +141,10 @@ def edit_staff(staff_id):
     return render_template('editstaff.html',
     staff=mongo.db.staff.find_one({'_id': ObjectId(staff_id)}))
 
-   
+
+
+
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
