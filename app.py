@@ -13,9 +13,6 @@ app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
 
 mongo = PyMongo(app)
 
-
-
-
 # Start of task routes
 
 @app.route('/')
@@ -65,6 +62,8 @@ def update_task(task_id):
 def delete_task(task_id):
     mongo.db.tasks.remove({'_id': ObjectId(task_id)})
     return redirect(url_for('get_tasks'))
+
+    
 
 # Start of project routes
 
@@ -140,26 +139,6 @@ def delete_staff(staff_id):
 def edit_staff(staff_id):
     return render_template('editstaff.html',
     staff=mongo.db.staff.find_one({'_id': ObjectId(staff_id)}))
-
-
-
-@app.route('/search', methods=['POST'])
-def search():
-    main_query = request.form.get('search_data')      
-    query = {'$regex': main_query, "$options": "i" } 
-     
-    results = mongo.db.tasks_data.find({
-        '$or': [
-            {'staff_name': query},
-            {'task_name': query},  
-            {'task_decription': query},  
-            {'due_date': query}  
-                     
-        ]
-    })
-    return render_template('search_results.html', query=main_query, results=results)
-
-
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
