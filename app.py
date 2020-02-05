@@ -143,6 +143,21 @@ def edit_staff(staff_id):
 
 
 
+@app.route('/search', methods=['POST'])
+def search():
+    main_query = request.form.get('search_data')      
+    query = {'$regex': main_query, "$options": "i" } 
+     
+    results = mongo.db.tasks_data.find({
+        '$or': [
+            {'staff_name': query},
+            {'task_name': query},  
+            {'task_decription': query},  
+            {'due_date': query}  
+                     
+        ]
+    })
+    return render_template('search_results.html', query=main_query, results=results)
 
 
 
