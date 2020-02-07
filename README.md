@@ -13,7 +13,7 @@ There are 3 main elements to the database collections employed in the site.
 
 # User Experience & Interface Design
 
-The user interface screens and views were designed to keep the type of data controlled and also provide an intuitive layout with progressive
+The user interface screens and views were designed to keep the type of data controlled and provide an intuitive layout with progressive
 functionality.
 
 The screens are kept minimalist and clutter free to allow the user a clear view of what is required in the completion of inputs and updates.
@@ -37,8 +37,6 @@ All fields and switches are disabled on the home page to ensure no accidental ed
 
 ![index](static/readme_images/viewtasks.jpg)
 
-
-
 ## Projects
 
 ### Add Projects
@@ -58,10 +56,9 @@ This screen enables the user to edit or delete an existing project in the workst
 
 The screen displays the Project Name & Owner with a dropdown option to view the Project Description.
 
-The are also 2 button options for Del & Edit
+There are also 2 button options for Del & Edit
 
 ![index](static/readme_images/edit_project.jpg)
-
 
 ## Tasks
 
@@ -89,7 +86,7 @@ This screen enables the user to edit or delete an existing task in the workstrea
 
 The screen displays the Project Name, Task Name, Due Date & Assigned To fields with a dropdown option to view the Task Description.
 
-The are also 2 button options for Del & Edit
+There are also 2 button options for Del & Edit
 
 ![index](static/readme_images/edit_task.jpg)
 
@@ -104,7 +101,6 @@ This screen enables the user to add a new project to the workstream and consists
 1.  Staff Name - Staff member to be added to the task assignment list.
 2.  Staff Team - The team or group the staff member belongs to.
 
-
 ![index](static/readme_images/add_staff.jpg)
 
 ### Manage Staff
@@ -113,12 +109,11 @@ This screen enables the user to edit or delete an existing project in the workst
 
 The screen displays the Staff Name with a dropdown option to view the Staff Team.
 
+There are also 2 button options for Del & Edit
+
 ![index](static/readme_images/edit_staff.jpg)
 
-
 # Future Release & development
-
-
 
 •	A search bar to be added to the html to allow users to query the database.
 
@@ -148,69 +143,74 @@ The screen displays the Staff Name with a dropdown option to view the Staff Team
 # Testing
 
 ## Manual Tests
+
 This web application has been manually tested with different scenarios that the user may experience.
 Every route in the App.py was tested when added to ensure functionality, syntax and output was correct. When all routes were tested and applied to the html pages, 
 the following manual tests were completed
 
-### 1.	 Viewtasks
+###     Viewtasks
 
-    i.	    Click on each field to ensure that all a disabled from edit or delete'.
+   1. Click on each field to ensure that all a disabled from edit or delete'.
 
-### 2.	Home link on Navbar
+### 	Home link on Navbar
 
-    i.	    Check link is working and takes user back to Viewtasks.html from any screen.
+   1. Check link is working and takes user back to Viewtasks.html from any screen.
 
-### 3.	Add Task
+###     Add Task
 
-    i.	    Click on menu option to ensure link opens correctly 
-    ii.	    Enter test date to each field'.
-    iii.    Enable / Disable all switches
-    iv.	    Choose save option and check that records are visible in Viewtasks.html.
-    v.	    Choose cancel option and confirm ‘Manage Tasks’ page is opened.
+   1. Click on menu option to ensure link opens correctly
+   2. Enter test date to each field'
+   3. Enable / Disable all switches
+   4. Choose save option and check that records are visible in Viewtasks.html
+   5. Choose cancel option and confirm ‘Manage Tasks’ page is opened
 
-### 4.	Manage Tasks
+### 	Manage Tasks
 
-    i.	    Choose dropdown to ensure ‘Task Description field displays correctly.
-    ii.	    Click on ‘Edit’ and confirm that “Edit’ page opens correctly.
-    iii.    Edit all fields and ‘Save – confirm that changes are visible in Viewtasks.html.
-    iv.	    Choose cancel option and confirm ‘Manage Tasks’ page is opened.
+   1. Choose dropdown to ensure ‘Task Description field displays correctly.
+   2. Click on ‘Edit’ and confirm that “Edit’ page opens correctly.
+   3. Edit all fields and ‘Save – confirm that changes are visible in Viewtasks.html.
+   4. Choose cancel option and confirm ‘Manage Tasks’ page is opened.
+   5. Choose 'Del' option and confirm that records are deleted from Database and Manage Tasks page
 
-### 5.	Add Project
+### 	Add Project
 
-    i.	    Click on menu option to ensure link opens correctly 
-    ii.	    Enter test date to each field'.
-    iii.    Choose save option and check that records are visible in Viewtasks.html.
-    iv.	    Choose cancel option and confirm ‘Manage Projects’ page is opened.
+   1. Click on menu option to ensure link opens correctly 
+   2. Enter test date to each field'.
+   3. Choose save option and check that records are visible in Viewtasks.html.
+   4. Choose cancel option and confirm ‘Manage Projects’ page is opened.
 
-### 6.	Manage Projects
+###     Manage Projects
 
-    i.	    Choose dropdown to ensure ‘Project Description field displays correctly.
-    ii.	    Click on ‘Edit’ and confirm that “Edit’ page opens correctly.
-    iii.	Edit all fields and ‘Save – confirm that changes are visible in Manage Projects page.
-    iv.	    Choose cancel option and confirm ‘Manage Projects’ page is opened.
+   1. Choose dropdown to ensure ‘Project Description field displays correctly.
+   2. Click on ‘Edit’ and confirm that “Edit’ page opens correctly.
+   3. Edit all fields and ‘Save – confirm that changes are visible in Manage Projects page.
+   4. Choose cancel option and confirm ‘Manage Projects’ page is opened.
+   5. Choose 'Del' option and confirm that records are deleted from Database and Manage Project page
 
-### 7.	Add Staff
+### 	Add Staff
 
-    i.	    Click on menu option to ensure link opens correctly 
-    ii.     Enter test date to each field'.
-    iii.    Choose save option and check that records are visible in Manage Staff page.
-    iv.	    Choose cancel option and confirm ‘Manage Staff’ page is opened.
+   1. Click on menu option to ensure link opens correctly 
+   2. Enter test date to each field'.
+   3. Choose save option and check that records are visible in Manage Staff page.
+   4. Choose cancel option and confirm ‘Manage Staff’ page is opened.
 
-### 8.	Manage Staff
+### Manage Staff
 
-    i.	    Choose dropdown to ensure ‘Staff Team field displays correctly.
-    ii.	    Click on ‘Edit’ and confirm that “Edit’ page opens correctly.
-    iii.	Edit all fields and ‘Save – confirm that changes are visible in Manage Staff page.
-    iv.	    Choose cancel option and confirm ‘Manage Staff’ page is opened.
+   1. Choose dropdown to ensure ‘Staff Team field displays correctly.
+   2. Click on ‘Edit’ and confirm that “Edit’ page opens correctly.
+   3. Edit all fields and ‘Save – confirm that changes are visible in Manage Staff page.
+   4. Choose cancel option and confirm ‘Manage Staff’ page is opened.
+   5. Choose 'Del' option and confirm that records are deleted from Database and Manage Staff page
 
 ## Responsiveness Testing
 
 This application has been tested on all mobile, tablet and desktop screen sizes Google Chrome Developer Tools.
 On desktop the application was tested on Chrome, Mozilla & MS Edge.
 On Tablet and Mobile the application was tested on Chrome & Samsung Internet App.
-Virtual testing on Apple devices was completed using Chrome Developer Tools
+Virtual testing on Apple devices was completed using Chrome Developer Tools.
 
 ## Code Validation
+
 The HTML, CSS and JavaScript code for this application has been run through and validated by The W3C Markup Validation Service and JSHint, 
 with the exception of the validation service seeing the Flask/Jinja markup as errors.
 
@@ -231,27 +231,26 @@ The application has been deployed onto Heroku. There is no difference between th
 
 It can be installed with the following steps:
 
-•	Download the git repository
-•	Sign up/login to Heroku.com
-•	From the dashboard click Create New App
-•	Enter a unique name and your region and click Create
-•	From your command line, enter heroku to ensure heroku is installed (if not installed this can be done with sudo snap install --classic heroku)
-•	heroku login
-•	Enter your credentials for heroku.com
-•	sudo pip3 install Flask
-•	sudo pip3 install pymongo
-•	sudo pip3 freeze --local > requirements.txt
-•	echo web: python run.py > Procfile
-•	git add .
-•	git commit -m "initial commit"
-•	git push -u heroku master
-•	heroku ps:scale web=1
-•	Make sure to set debug to True.
-•	From heroku.com app settings: set config vars to IP : 0.0.0.0, PORT : 5000 and MONGO_URI :mongodb://[username]:[password]@ds129914.mlab.com:29914/task-tracker, 
-    ensuring that you update the username and password accordingly.
-•	Click More > Restart all Dynos
-•	Application is live at https://your-app-name.herokuapp.com/
-
+*   Download the git repository
+*   Sign up/login to Heroku.com
+*   From the dashboard click Create New App
+*   Enter a unique name and your region and click Create
+*   From your command line, enter heroku to ensure heroku is installed (if not installed this can be done with sudo snap install --classic heroku)
+*   Log in to heroku using 'heroku login' at the command line
+*   Enter your credentials for heroku.com
+*   sudo pip3 install Flask
+*   sudo pip3 install pymongo
+*   sudo pip3 install dnspymongo
+*   sudo pip3 freeze --local > requirements.txt
+*   echo web: python run.py > Procfile
+*   git add .
+*   git commit -m "initial commit"
+*   git push -u heroku master
+*   heroku ps:scale web=1
+*   Make sure to set debug to True.
+*   In heroku.com app settings: set config vars to IP : 0.0.0.0, PORT : 5000
+*   Click More > Restart all Dynos
+*   Application is live at https://your-app-name.herokuapp.com/
 
 # CREDITS
 
