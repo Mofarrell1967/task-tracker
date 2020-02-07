@@ -149,54 +149,59 @@ The screen displays the Staff Name with a dropdown option to view the Staff Team
 
 ## Manual Tests
 This web application has been manually tested with different scenarios that the user may experience.
-Every route in the App.py was tested when added to ensure functionality, syntax and output was correct. When all routes were tested and applied to the html pages, the following manual tests were completed
-1.	Viewtasks
+Every route in the App.py was tested when added to ensure functionality, syntax and output was correct. When all routes were tested and applied to the html pages, 
+the following manual tests were completed
 
-    i.	Click on each field to ensure that all a disabled from edit or delete'.
-2.	Home link on Navbar
+### 1.	 Viewtasks
 
-    i.	Check link is working and takes user back to Viewtasks.html from any screen.
-3.	Add Task
+    i.	    Click on each field to ensure that all a disabled from edit or delete'.
 
-    i.	Click on menu option to ensure link opens correctly 
-    ii.	Enter test date to each field'.
-    iii.	Enable / Disable all switches
-iv.	Choose save option and check that records are visible in Viewtasks.html.
-v.	Choose cancel option and confirm ‘Manage Tasks’ page is opened.
+### 2.	Home link on Navbar
 
-4.	Manage Tasks
-    i.	Choose dropdown to ensure ‘Task Description field displays correctly.
-    ii.	Click on ‘Edit’ and confirm that “Edit’ page opens correctly.
-    iii.	Edit all fields and ‘Save – confirm that changes are visible in Viewtasks.html.
-    iv.	Choose cancel option and confirm ‘Manage Tasks’ page is opened.
+    i.	    Check link is working and takes user back to Viewtasks.html from any screen.
 
-5.	Add Project
+### 3.	Add Task
 
-    i.	Click on menu option to ensure link opens correctly 
-    ii.	Enter test date to each field'.
-    iii.	Choose save option and check that records are visible in Viewtasks.html.
-    iv.	Choose cancel option and confirm ‘Manage Projects’ page is opened.
+    i.	    Click on menu option to ensure link opens correctly 
+    ii.	    Enter test date to each field'.
+    iii.    Enable / Disable all switches
+    iv.	    Choose save option and check that records are visible in Viewtasks.html.
+    v.	    Choose cancel option and confirm ‘Manage Tasks’ page is opened.
 
-6.	Manage Projects
+### 4.	Manage Tasks
+
+    i.	    Choose dropdown to ensure ‘Task Description field displays correctly.
+    ii.	    Click on ‘Edit’ and confirm that “Edit’ page opens correctly.
+    iii.    Edit all fields and ‘Save – confirm that changes are visible in Viewtasks.html.
+    iv.	    Choose cancel option and confirm ‘Manage Tasks’ page is opened.
+
+### 5.	Add Project
+
+    i.	    Click on menu option to ensure link opens correctly 
+    ii.	    Enter test date to each field'.
+    iii.    Choose save option and check that records are visible in Viewtasks.html.
+    iv.	    Choose cancel option and confirm ‘Manage Projects’ page is opened.
+
+### 6.	Manage Projects
 
     i.	Choose dropdown to ensure ‘Project Description field displays correctly.
     ii.	Click on ‘Edit’ and confirm that “Edit’ page opens correctly.
     iii.	Edit all fields and ‘Save – confirm that changes are visible in Manage Projects page.
     iv.	Choose cancel option and confirm ‘Manage Projects’ page is opened.
 
-7.	Add Staff
+### 7.	Add Staff
 
-    i.	Click on menu option to ensure link opens correctly 
-    ii.	Enter test date to each field'.
+    i.	    Click on menu option to ensure link opens correctly 
+    ii.	    Enter test date to each field'.
     iii.	Choose save option and check that records are visible in Manage Staff page.
-    iv.	Choose cancel option and confirm ‘Manage Staff’ page is opened.
+    iv.	    Choose cancel option and confirm ‘Manage Staff’ page is opened.
 
-8.	Manage Staff
+### 8.	Manage Staff
 
-    i.	Choose dropdown to ensure ‘Staff Team field displays correctly.
-    ii.	Click on ‘Edit’ and confirm that “Edit’ page opens correctly.
+    i.	    Choose dropdown to ensure ‘Staff Team field displays correctly.
+    ii.	    Click on ‘Edit’ and confirm that “Edit’ page opens correctly.
     iii.	Edit all fields and ‘Save – confirm that changes are visible in Manage Staff page.
-    iv.	Choose cancel option and confirm ‘Manage Staff’ page is opened.
+    iv.	    Choose cancel option and confirm ‘Manage Staff’ page is opened.
 
 ## Responsiveness Testing
 
