@@ -11,6 +11,8 @@ There are 3 main elements to the database collections employed in the site.
 2.  Tasks
 3.  Staff
 
+The application is deployed on Heroku can be run by clicking [here](https://mo-task-tracker.herokuapp.com/)
+
 # User Experience & Interface Design
 
 The user interface screens and views were designed to keep the type of data controlled and provide an intuitive layout with progressive
