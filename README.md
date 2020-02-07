@@ -35,7 +35,7 @@ removed from this view.
 
 All fields and switches are disabled on the home page to ensure no accidental edits or deletion are applied when viewing tasks.
 
-![index](static/readme_images/viewtasks.jpg)
+![index](static/readme_images/view_tasks.jpg)
 
 ## Projects
 
@@ -55,6 +55,8 @@ This screen enables the user to add a new project to the workstream and consists
 This screen enables the user to edit or delete an existing project in the workstream.
 
 The screen displays the Project Name & Owner with a dropdown option to view the Project Description.
+
+![index](static/readme_images/manage_project.jpg)
 
 There are also 2 button options for Del & Edit
 
@@ -86,6 +88,8 @@ This screen enables the user to edit or delete an existing task in the workstrea
 
 The screen displays the Project Name, Task Name, Due Date & Assigned To fields with a dropdown option to view the Task Description.
 
+![index](static/readme_images/manage_task.jpg)
+
 There are also 2 button options for Del & Edit
 
 ![index](static/readme_images/edit_task.jpg)
@@ -108,6 +112,8 @@ This screen enables the user to add a new project to the workstream and consists
 This screen enables the user to edit or delete an existing project in the workstream.
 
 The screen displays the Staff Name with a dropdown option to view the Staff Team.
+
+![index](static/readme_images/manage_staff.jpg)
 
 There are also 2 button options for Del & Edit
 
