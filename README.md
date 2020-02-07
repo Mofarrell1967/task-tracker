@@ -184,16 +184,16 @@ the following manual tests were completed
 
 ### 6.	Manage Projects
 
-    i.	Choose dropdown to ensure ‘Project Description field displays correctly.
-    ii.	Click on ‘Edit’ and confirm that “Edit’ page opens correctly.
+    i.	    Choose dropdown to ensure ‘Project Description field displays correctly.
+    ii.	    Click on ‘Edit’ and confirm that “Edit’ page opens correctly.
     iii.	Edit all fields and ‘Save – confirm that changes are visible in Manage Projects page.
-    iv.	Choose cancel option and confirm ‘Manage Projects’ page is opened.
+    iv.	    Choose cancel option and confirm ‘Manage Projects’ page is opened.
 
 ### 7.	Add Staff
 
     i.	    Click on menu option to ensure link opens correctly 
-    ii.	    Enter test date to each field'.
-    iii.	Choose save option and check that records are visible in Manage Staff page.
+    ii.     Enter test date to each field'.
+    iii.    Choose save option and check that records are visible in Manage Staff page.
     iv.	    Choose cancel option and confirm ‘Manage Staff’ page is opened.
 
 ### 8.	Manage Staff
@@ -213,6 +213,57 @@ Virtual testing on Apple devices was completed using Chrome Developer Tools
 ## Code Validation
 The HTML, CSS and JavaScript code for this application has been run through and validated by The W3C Markup Validation Service and JSHint, 
 with the exception of the validation service seeing the Flask/Jinja markup as errors.
+
+# DEPLOYMENT
+
+## GitHub
+
+This site is hosted on GitHub and deployed directly from the master branch. Any commit updates or new releases will be deployed to that master branch. 
+
+To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://github.com/Mofarrell1967/task-tracker.git into your terminal. 
+To unlink the site from the GitHub repository, type git remote rm origin into the terminal.
+
+To view the source code please click on the following GitHub address https://github.com/Mofarrell1967/task-tracker
+
+## Heroku
+
+The application has been deployed onto Heroku. There is no difference between the GitHub code and the code in the live application.
+
+It can be installed with the following steps:
+
+•	Download the git repository
+•	Sign up/login to Heroku.com
+•	From the dashboard click Create New App
+•	Enter a unique name and your region and click Create
+•	From your command line, enter heroku to ensure heroku is installed (if not installed this can be done with sudo snap install --classic heroku)
+•	heroku login
+•	Enter your credentials for heroku.com
+•	sudo pip3 install Flask
+•	sudo pip3 install pymongo
+•	sudo pip3 freeze --local > requirements.txt
+•	echo web: python run.py > Procfile
+•	git add .
+•	git commit -m "initial commit"
+•	git push -u heroku master
+•	heroku ps:scale web=1
+•	Make sure to set debug to True.
+•	From heroku.com app settings: set config vars to IP : 0.0.0.0, PORT : 5000 and MONGO_URI :mongodb://[username]:[password]@ds129914.mlab.com:29914/task-tracker, 
+    ensuring that you update the username and password accordingly.
+•	Click More > Restart all Dynos
+•	Application is live at https://your-app-name.herokuapp.com/
+
+
+# CREDITS
+
+### content
+
+Code Institute for the educational modules used as partial templates for the bar graphs and functionality
+
+https://courses.codeinstitute.net/program/FullstackWebDeveloper
+
+
+**Please Note that this site is currently for educational purposes only**
+
 
 
 
