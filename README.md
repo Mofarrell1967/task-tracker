@@ -24,11 +24,11 @@ screen to screen.
 The design also allows for future features and additions to be applied without extensively changing the current layout of the screens or adding any complexity to
 user experience
 
-## Note: 
+#### Note: 
 The delete function is uncontrolled as authentication is not a requirement feature of this Milestone Project and is assigned as
 a new release feature to be enabled in Release 2.0 of the site.
 
-### Home Page / View Tasks
+## Home Page / View Tasks
 
 The home page provides a view of all tasks currently assigned and can be either active or completed. Only when a task is deleted will it be
 removed from this view.
@@ -39,9 +39,9 @@ All fields and switches are disabled on the home page to ensure no accidental ed
 
 
 
-### Projects
+## Projects
 
-#### Add Projects
+### Add Projects
 
 This screen enables the user to add a new project to the workstream and consists of 3 entry options
 
@@ -52,7 +52,7 @@ This screen enables the user to add a new project to the workstream and consists
 
 ![index](static/readme_images/add_project.jpg)
 
-#### Manage Projects
+### Manage Projects
 
 This screen enables the user to edit or delete an existing project in the workstream.
 
@@ -63,9 +63,9 @@ The are also 2 button options for Del & Edit
 ![index](static/readme_images/edit_project.jpg)
 
 
-### Tasks
+## Tasks
 
-#### Add Task
+### Add Task
 
 This screen enables the user to add a new project to the workstream and consists of 3 entry options
 
@@ -83,7 +83,7 @@ Is Billable - to be enabled if there is a cost applied to the task and a revenue
 
 ![index](static/readme_images/add_task.jpg)
 
-#### Manage Tasks
+### Manage Tasks
 
 This screen enables the user to edit or delete an existing task in the workstream.
 
@@ -95,9 +95,9 @@ The are also 2 button options for Del & Edit
 
 The edit option also provides an additional switch to be enabled should the task be completed.
 
-### Staff
+## Staff
 
-#### Add Staff
+### Add Staff
 
 This screen enables the user to add a new project to the workstream and consists of 3 entry options
 
@@ -107,7 +107,7 @@ This screen enables the user to add a new project to the workstream and consists
 
 ![index](static/readme_images/add_staff.jpg)
 
-#### Manage Staff
+### Manage Staff
 
 This screen enables the user to edit or delete an existing project in the workstream.
 
@@ -116,7 +116,7 @@ The screen displays the Staff Name with a dropdown option to view the Staff Team
 ![index](static/readme_images/edit_staff.jpg)
 
 
-## Future Release & development
+# Future Release & development
 
 
 
